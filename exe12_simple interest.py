@@ -1,2 +1,0 @@
-#Computing simple interest
-
