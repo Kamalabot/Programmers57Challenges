@@ -1,5 +1,7 @@
 #This file contains only the helper functions
 
+from random import randint
+
 def conv_numbers(num:str) ->int:
     try:
         return int(num)
@@ -13,3 +15,15 @@ def bmiCalc(height:int,weight:int)->float:
     return round(bmi,1)
 
 assert bmiCalc(height=72,weight=180) == 24.4
+
+def karvonen(age: int, intens: float, restHR: int) -> int:
+    temp = ((220 - age) - restHR) * intens + restHR
+    return round(temp)
+
+def give_rand(difficul: int)->int:
+    if difficul == 1:
+        return randint(1, 10)
+    elif difficul == 2:
+        return randint(1, 100)
+    else:
+        return randint(1, 1000)
