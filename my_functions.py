@@ -27,3 +27,11 @@ def give_rand(difficul: int)->int:
         return randint(1, 100)
     else:
         return randint(1, 1000)
+
+def get_domain(email_address: str) -> str:
+    """Split on @ and return the last piece"""
+    return email_address.lower().split('@')[-1]
+
+assert get_domain('kalj879p@gmail.com') == 'gmail.com'
+assert get_domain('macdeh@theay.com') == 'theay.com'
+
