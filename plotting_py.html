@@ -1,0 +1,27 @@
+<html>
+    <head>
+      <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+      <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+      <py-env>
+        - numpy
+        - matplotlib
+      </py-env>
+    </head>
+
+  <body>
+    <h1>Let's plot random numbers</h1>
+    <div id="plot"></div>
+    <py-script output="plot">
+import matplotlib.pyplot as plt
+import numpy as np
+
+u = lambda x, y: 3 * x + 4 * y ** 2
+x = np.random.randn(1000)
+y = np.random.randn(1000)
+us = [u(x,y) for x, y in zip(x,y)]
+fig, ax = plt.subplots()
+ax.scatter(x, us)
+fig
+    </py-script>
+  </body>
+</html>
