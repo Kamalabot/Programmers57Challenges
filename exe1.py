@@ -1,7 +1,7 @@
-#Hello world of Challenges!!!
+# Hello world of Challenges!!!
 name = input("What is your name? ")
 print(f"Hello, {name} nice to meet you!")
 
-#Version of the program without using any variables
+# One liner Version 
 
 print("Hello, {} nice to you meet you".format(input("your name?")))

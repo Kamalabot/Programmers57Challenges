@@ -1,6 +1,6 @@
-#Rectangular room area
+# Rectangular room area
 
-numbers = [str(x) for x in range(1,10000000)]
+numbers = [str(x) for x in range(1, 10000000)]
 t = 0
 
 while True:

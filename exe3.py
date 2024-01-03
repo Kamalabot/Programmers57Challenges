@@ -1,6 +1,4 @@
-import dataset 
-
-#Lets print some quotes
+# Lets print some quotes
 quote = input("What is the quote?")
 who = input("Who said it?")
 
