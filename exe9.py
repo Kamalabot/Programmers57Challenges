@@ -5,12 +5,13 @@ t = 0
 
 while True:
     print("Please provide the valid numbers")
+    # getting the inputs as numbers
     length = conv_numbers(input("What is wall length?"))
     width = conv_numbers(input("What is wall breadth?"))
     t = t + 1
     print(t)
     if length and width:
-        # Check the logic and break out of the loop
+        # Check if valid numbers are provided and break out of the loop
         break
 
 # using the ceil to round to the upper function

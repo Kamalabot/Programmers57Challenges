@@ -4,16 +4,17 @@ from my_functions import conv_numbers
 t = 0
 while True:
     print("Please provide the valid numbers")
+    # getting inputs from user
     people = conv_numbers(input("How many people?"))
     pizza = conv_numbers(input("How many pizza you have?"))
     t = t + 1
     print(t)
     if pizza and people:
-        # Check the logic and break out of the loop
+        # Check if valid numbers are provided, then break
         break
 
 slice = 8
-
+# print the collected input for reference
 print(f"{people} people with {pizza} pizza")
 
 print(f"Each person gets {round(pizza * slice / people, 1)}")

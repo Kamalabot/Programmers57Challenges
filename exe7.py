@@ -9,17 +9,20 @@ while True:
     breadth = conv_numbers(input("What is the breadth of room?"))
     t = t + 1
     print(t)
-    if length and breadth:
+    if length and breadth:  # After getting length and breadth break out
         break
 
 print("You entered dimensions of {} feet by {} feet".format(length, breadth))
 
 print("The area is\n")
 
+
 # Calculations has to be seperate from the output
-def calc_area(l: int, b: int):
-    area = l * b
-    area_m = l * b * 0.092
+def calc_area(lnth: int, bdth: int):
+    # multiply length with breadth
+    area = lnth * bdth
+    # convert the area into sq.mt
+    area_m = lnth * bdth * 0.092
     return area, area_m
 
 
